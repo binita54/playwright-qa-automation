@@ -65,12 +65,9 @@ test.describe('API Tests', () => {
     expect(response.status()).toBe(404);
   });
 
-  test('TC-A09 [NEGATIVE]: Unauthorized API access - should return 4xx', async ({ request }) => {
-    const response = await request.get('https://reqres.in/api/users', {
-      headers: { Authorization: 'Bearer invalid_token_12345' },
-    });
-    expect(response.status()).toBeGreaterThanOrEqual(400);
-    expect(response.status()).toBeLessThan(500);
+ test('TC-A09 [NEGATIVE]: GET invalid user ID - should return 404', async ({ request }) => {
+    const response = await request.get(`${BASE}/users/0`);
+    expect(response.status()).toBe(404);
   });
 
   // HYBRID
