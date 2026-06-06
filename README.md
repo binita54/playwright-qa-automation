@@ -205,3 +205,23 @@ The workflow:
 - **`.env` driven** — credentials and URLs are never hardcoded
 - **Parallel execution** enabled by default for faster CI runs
 - **Retries** set to 1 locally, 2 on CI to handle transient network flakiness
+
+
+---
+
+## Screenshots
+
+### HTML Test Report
+![HTML Report1](screenshots/report-screenshot-1.png)
+![HTML Report2](screenshots/report-screenshot-2.png)
+![HTML Report3](screenshots/report-screenshot-3.png)
+![HTML Report4](screenshots/report-screenshot-4.png)
+![HTML Report5](screenshots/report-screenshot-5.png)
+![HTML Report6](screenshots/report-screenshot-6.png)
+![HTML Report7](screenshots/report-screenshot-7.png)
+
+### Trace Viewer
+![Trace Viewer1](screenshots/trace-screenshot-1.png)
+![Trace Viewer2](screenshots/trace-screenshot-2.png)
+![Trace Viewer3](screenshots/trace-screenshot-3.png)
+![Trace Viewer4](screenshots/trace-screenshot-4.png)
